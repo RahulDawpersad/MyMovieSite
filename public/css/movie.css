@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Great+Vibes&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Ratchet.jpg'); */
+    background-size: cover;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: relative; /* Ensure the body is relatively positioned */
+    background-blend-mode: multiply; /* This blends the linear-gradient with the background image */
+}
+
+.img-wrapper{
+   display: grid;
+   place-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 4em auto;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    color: rgb(219, 16, 60);
+}
+
+h1, h2{
+    font-size: 1.2em;
+    margin: 1em 1em;
+}
+
+p{
+    color: #aaa;
+    width: 350px;
+    margin-left: 2em;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+strong{
+    color: rgb(0, 160, 253);
+}
+
+img {
+    margin: 2em;
+    /* max-width: 100%; */
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.trailer {
+    margin: 1em 9em;
+}
+
+.info{
+    display: flex;
+    padding: 1em 0;
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        -webkit-text-size-adjust: 100%;
+    }
+    body{
+        overflow-x: hidden;
+        text-align: center;
+    }
+    .wrapper{
+        text-align: center;
+    }
+    .img-wrapper{
+        display: grid;
+        place-items: center;
+       margin-left: -7em;
+     }
+      h2{
+        text-align: center;
+        font-size: 1em;
+    }
+     img{
+        width: auto;
+        height: 400px;
+     }
+     .content{
+        text-align: center;
+     }
+     p{
+        font-size: 0.8em;
+        margin: 0.5em 1.5em;
+        /* margin-left: -0.8em; */
+     }
+     .trailer {
+     margin-left: 1.3em;
+    }
+    
+    .info{
+        display: grid;
+        place-items: center;
+    }
+}
