@@ -87,16 +87,19 @@ input[type="text"] {
     padding: 1em 0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     html{
         -webkit-text-size-adjust: 100%;
     }
     body{
         overflow-x: hidden;
+        width: 100%;
+        height: 100%;
         text-align: center;
     }
     .wrapper{
         text-align: center;
+        width: auto;
     }
     .img-wrapper{
         display: grid;
@@ -108,23 +111,26 @@ input[type="text"] {
         font-size: 1em;
     }
      img{
-        width: auto;
+        width: 200px;
         height: 400px;
      }
      .content{
         text-align: center;
      }
      p{
-        font-size: 0.8em;
-        margin: 0.5em 1.5em;
-        /* margin-left: -0.8em; */
+        font-size: 0.7em;
+        width: 300px;
+        margin: 0.5em;
+        margin-left: 2.3em;
      }
      .trailer {
-     margin-left: 1.3em;
+     margin-left: 2em;
+     overflow: hidden;
     }
     
     .info{
         display: grid;
         place-items: center;
+        text-align: center;
     }
 }

@@ -142,7 +142,7 @@ function displayTrailers(trailers) {
         trailerElement.classList.add('trailer');
         trailerElement.innerHTML = `
             <h3>${name}</h3>
-            <iframe width="350" height="315" src="https://www.youtube.com/embed/${trailerKey}" frameborder="0" allowfullscreen></iframe>
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/${trailerKey}" frameborder="0" allowfullscreen></iframe>
         `;
 
         trailersContainer.appendChild(trailerElement);
